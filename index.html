@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,12 @@
             padding: 20px;
         }
 
-        h1, h4 {
+        h1,h4 {
             text-align: center;
+        }
+
+        h3 {
+            text-align: left;
         }
 
         ul {
@@ -21,8 +26,9 @@
             border-radius: 10px;
             max-width: 400px;
             margin: 20px auto;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: none; /* Ocultamos por defecto */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            /* Ocultamos por defecto */
         }
 
         li {
@@ -40,6 +46,12 @@
             padding: 10px;
             font-size: 16px;
         }
+
+        .contador {
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -56,68 +68,127 @@
     </select>
 
     <!-- LISTAS -->
-     <!--PATRÓN ENLACES: 
+    <!--PATRÓN ENLACES: 
         <li><a href="" target="_blank"></a> (Autor:)</li>
     -->
     <ul id="despliegue">
         <h3>DESPLIEGUE APLICACIONES WEB</h3>
-        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf1-daw-ilerna-22-23.html" target="_blank" class="importante">UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf2-daw-ilerna-22-23.html" target="_blank" class="importante">UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf4-daw-ilerna-22-23.html" target="_blank" class="importante">UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf3-daw-ilerna-22-23.html" target="_blank" class="importante">UF3 22/23</a> (Autor: QWERTY ZGZ)</li>      
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra1.html" target="_blank">RA1 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra2.html" target="_blank">RA2 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra3.html" target="_blank">RA3 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra4.html" target="_blank">RA4 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra5.html" target="_blank">RA5 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra6.html" target="_blank">RA6 (En construcción)</a> (Autor:JEDIEX)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-modelo-examen-1.html" target="_blank" class="importante">Modelo Examen 1 2025</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-mix-modelos-examenes-2-3.html" target="_blank" class="importante">Mix Modelos Examenes 2 y 3 2025</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema1-25-26.html" target="_blank">Tema 1 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema2-25-26.html" target="_blank">Tema 2 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema3-25-26.html" target="_blank">Tema 3 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema4-25-26.html" target="_blank">Tema 4 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema5-25-26.html" target="_blank">Tema 5 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema6-25-26.html" target="_blank">Tema 6 25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf1-daw-ilerna-22-23.html" target="_blank"
+                class="importante">UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf2-daw-ilerna-22-23.html" target="_blank"
+                class="importante">UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf4-daw-ilerna-22-23.html" target="_blank"
+                class="importante">UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf3-daw-ilerna-22-23.html" target="_blank"
+                class="importante">UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra1.html" target="_blank">RA1 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra2.html" target="_blank">RA2 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra3.html" target="_blank">RA3 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra4.html" target="_blank">RA4 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra5.html" target="_blank">RA5 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra6.html" target="_blank">RA6 (En
+                construcción)</a> (Autor:JEDIEX)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-modelo-examen-1.html" target="_blank"
+                class="importante">Modelo Examen 1 2025</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-mix-modelos-examenes-2-3.html" target="_blank"
+                class="importante">Mix Modelos Examenes 2 y 3 2025</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema1-25-26.html" target="_blank">Tema 1
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema2-25-26.html" target="_blank">Tema 2
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema3-25-26.html" target="_blank">Tema 3
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema4-25-26.html" target="_blank">Tema 4
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema5-25-26.html" target="_blank">Tema 5
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ilerna-tema6-25-26.html" target="_blank">Tema 6
+                25/26</a> (Autor: Betty)</li>
+        </br>
+        <div class="contador" id="contador-despliegue"></div>
     </ul>
 
     <ul id="cliente">
         <h3>DESARROLLO ENTORNO CLIENTE</h3>
-        <li><a href="https://www.daypo.com/daw-mp6-desarrollo-web-entorno-cliente-ilerna.html" target="_blank" class="importante">MP6-Pacs+libro+examenes 2024</a> (Autor: Tadeus)</li>
-        <li><a href="https://www.daypo.com/desarollo-web-entorno-cliente-examen-2025.html" target="_blank" class="importante">Examen 2025 - Recopilatorio</a> (Autor: Azucarete)</li>
-        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf1-daw-ilerna-22-23.html" target="_blank" class="importante">MP6-Cliente UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf2-daw-ilerna-22-23.html" target="_blank" class="importante">MP6-Cliente UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf3-daw-ilerna-22-23.html" target="_blank" class="importante">MP6-Cliente UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema1-ilerna-25-26.html" target="_blank">Tema 1 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-2-ilerna-25-26.html" target="_blank">Tema 2 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-3-ilerna-25-26.html" target="_blank">Tema 3 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-4-ilerna-25-26.html" target="_blank">Tema 4 25/26</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-5-ilerna-25-26-exp-regulares.html" target="_blank">Tema 5 25/26 Exp. Regulares</a> (Autor: Betty)</li>
-        <li><a href="https://www.daypo.com/dwec-ra1.html" target="_blank">RA1 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra2.html" target="_blank">RA2 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra3.html" target="_blank">RA3 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra4.html" target="_blank">RA4 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra5.html" target="_blank">RA5 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra6.html" target="_blank">RA6 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwec-ra7.html" target="_blank">RA7 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
+        <li><a href="https://www.daypo.com/daw-mp6-desarrollo-web-entorno-cliente-ilerna.html" target="_blank"
+                class="importante">MP6-Pacs+libro+examenes 2024</a> (Autor: Tadeus)</li>
+        <li><a href="https://www.daypo.com/desarollo-web-entorno-cliente-examen-2025.html" target="_blank"
+                class="importante">Examen 2025 - Recopilatorio</a> (Autor: Azucarete)</li>
+        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf1-daw-ilerna-22-23.html" target="_blank"
+                class="importante">MP6-Cliente UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf2-daw-ilerna-22-23.html" target="_blank"
+                class="importante">MP6-Cliente UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf3-daw-ilerna-22-23.html" target="_blank"
+                class="importante">MP6-Cliente UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema1-ilerna-25-26.html" target="_blank">Tema 1
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-2-ilerna-25-26.html" target="_blank">Tema 2
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-3-ilerna-25-26.html" target="_blank">Tema 3
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-4-ilerna-25-26.html" target="_blank">Tema 4
+                25/26</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-5-ilerna-25-26-exp-regulares.html"
+                target="_blank">Tema 5 25/26 Exp. Regulares</a> (Autor: Betty)</li>
+        <li><a href="https://www.daypo.com/dwec-ra1.html" target="_blank">RA1 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra2.html" target="_blank">RA2 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra3.html" target="_blank">RA3 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra4.html" target="_blank">RA4 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra5.html" target="_blank">RA5 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra6.html" target="_blank">RA6 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwec-ra7.html" target="_blank">RA7 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        
+        </br>
+        <div class="contador" id="contador-despliegue"></div>
     </ul>
 
     <ul id="servidor">
         <h3>DESARROLLO ENTORNO SERVIDOR</h3>
-        <li><a href="https://www.daypo.com/daw-mp6-desarrollo-web-entorno-servidor-ilerna.html" target="_blank" class="importante">MP6-Pacs+libro+examenes 2024</a> (Autor:Tadeus)</li>
-        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf1-daw-ilerna-22-23.html" target="_blank" class="importante">MP7-Servidor UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf2-daw-ilerna-22-23.html" target="_blank" class="importante">MP7-Servidor UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf3-daw-ilerna-22-23.html" target="_blank" class="importante">MP7-Servidor UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf4-daw-ilerna-22-23.html" target="_blank" class="importante">MP7-Servidor UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
-        <li><a href="https://www.daypo.com/dwes-ra1.html" target="_blank">RA1 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra2.html" target="_blank">RA2 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra3.html" target="_blank">RA3 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra4.html" target="_blank">RA4 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra5.html" target="_blank">RA5 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra6.html" target="_blank">RA6 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra7.html" target="_blank">RA7 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra8.html" target="_blank">RA8 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
-        <li><a href="https://www.daypo.com/dwes-ra9.html" target="_blank">RA9 25/26 (En construcción)</a> (Autor: JEDIEX)</li>
+        <li><a href="https://www.daypo.com/daw-mp6-desarrollo-web-entorno-servidor-ilerna.html" target="_blank"
+                class="importante">MP6-Pacs+libro+examenes 2024</a> (Autor:Tadeus)</li>
+        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf1-daw-ilerna-22-23.html"
+                target="_blank" class="importante">MP7-Servidor UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf2-daw-ilerna-22-23.html"
+                target="_blank" class="importante">MP7-Servidor UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf3-daw-ilerna-22-23.html"
+                target="_blank" class="importante">MP7-Servidor UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf4-daw-ilerna-22-23.html"
+                target="_blank" class="importante">MP7-Servidor UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-daw-ilerna-22-23.html"
+                target="_blank">Recopilatorio Pacs Semestre 22/23</a> (Autor: QWERTY ZGZ)</li>
+        <li><a href="https://www.daypo.com/dwes-ra1.html" target="_blank">RA1 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra2.html" target="_blank">RA2 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra3.html" target="_blank">RA3 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra4.html" target="_blank">RA4 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra5.html" target="_blank">RA5 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra6.html" target="_blank">RA6 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra7.html" target="_blank">RA7 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra8.html" target="_blank">RA8 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        <li><a href="https://www.daypo.com/dwes-ra9.html" target="_blank">RA9 25/26 (En construcción)</a> (Autor:
+            JEDIEX)</li>
+        
+        </br>
+        <div class="contador" id="contador-despliegue"></div>
     </ul>
 
 
@@ -134,9 +205,17 @@
 
             // Si hay una opción válida, mostrar la lista correspondiente
             if (valor) {
-                document.getElementById(valor).style.display = "block";
+                const listaSeleccionada = document.getElementById(valor);
+                listaSeleccionada.style.display = "block";
+
+                // Actualizar contador
+                const totalTests = listaSeleccionada.querySelectorAll("li").length;
+                const importantes = listaSeleccionada.querySelectorAll(".importante").length;
+                const contador = listaSeleccionada.querySelector(".contador");
+                contador.textContent = `Total tests: ${totalTests} · Destacados: ${importantes}`;
             }
         });
     </script>
 </body>
+
 </html>

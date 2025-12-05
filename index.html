@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilerna daypos</title>
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             background: #f2f2f2;
             padding: 20px;
         }
 
-        h1,h4 {
+        h1,
+        h4 {
             text-align: center;
         }
 
         h3 {
             text-align: left;
+        }
+
+        a {
+            color: #0066cc;
         }
 
         ul {
@@ -40,7 +46,8 @@
             font-weight: bold;
         }
 
-        #selector {
+        #selector,
+        #modo-oscuro-btn {
             display: block;
             margin: 20px auto;
             padding: 10px;
@@ -52,12 +59,33 @@
             margin-top: 10px;
             font-weight: bold;
         }
+
+        /* Modo oscuro */
+        body.dark,
+        body.dark ul {
+            background: #1e1e1e;
+            color: #ddd;
+        }
+
+        body.dark .importante {
+            color: #ff6666;
+        }
+
+        body.dark #selector,
+        body.dark #modo-oscuro-btn {
+            background: #333;
+            color: #ddd;
+            border: 1px solid #555;
+        }
     </style>
 </head>
 
 <body>
     <h1>DAYPOS REPASO EXAMEN</h1>
     <h4 class="importante">(En rojo los test más destacados)</h4>
+
+    <!-- Botón para modo oscuro -->
+    <button id="modo-oscuro-btn">Activar modo oscuro</button>
 
     <!-- SELECTOR DE ASIGNATURA -->
     <select id="selector">
@@ -74,13 +102,13 @@
     <ul id="despliegue">
         <h3>DESPLIEGUE APLICACIONES WEB</h3>
         <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf1-daw-ilerna-22-23.html" target="_blank"
-                class="importante">UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">UF1 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf2-daw-ilerna-22-23.html" target="_blank"
-                class="importante">UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">UF2 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf4-daw-ilerna-22-23.html" target="_blank"
-                class="importante">UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">UF4 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp8-despliegue-aplicaciones-web-uf3-daw-ilerna-22-23.html" target="_blank"
-                class="importante">UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">UF3 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra1.html" target="_blank">RA1 (En
                 construcción)</a> (Autor:JEDIEX)</li>
         <li><a href="https://www.daypo.com/despliegue-aplicaciones-web-ra2.html" target="_blank">RA2 (En
@@ -120,11 +148,11 @@
         <li><a href="https://www.daypo.com/desarollo-web-entorno-cliente-examen-2025.html" target="_blank"
                 class="importante">Examen 2025 - Recopilatorio</a> (Autor: Azucarete)</li>
         <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf1-daw-ilerna-22-23.html" target="_blank"
-                class="importante">MP6-Cliente UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">MP6-Cliente UF1 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf2-daw-ilerna-22-23.html" target="_blank"
-                class="importante">MP6-Cliente UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">MP6-Cliente UF2 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-uf3-daw-ilerna-22-23.html" target="_blank"
-                class="importante">MP6-Cliente UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+                class="importante">MP6-Cliente UF3 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema1-ilerna-25-26.html" target="_blank">Tema 1
                 25/26</a> (Autor: Betty)</li>
         <li><a href="https://www.daypo.com/desarrollo-entorno-cliente-tema-2-ilerna-25-26.html" target="_blank">Tema 2
@@ -149,7 +177,7 @@
             JEDIEX)</li>
         <li><a href="https://www.daypo.com/dwec-ra7.html" target="_blank">RA7 25/26 (En construcción)</a> (Autor:
             JEDIEX)</li>
-        
+
         </br>
         <div class="contador" id="contador-despliegue"></div>
     </ul>
@@ -159,15 +187,15 @@
         <li><a href="https://www.daypo.com/daw-mp6-desarrollo-web-entorno-servidor-ilerna.html" target="_blank"
                 class="importante">MP6-Pacs+libro+examenes 2024</a> (Autor:Tadeus)</li>
         <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf1-daw-ilerna-22-23.html"
-                target="_blank" class="importante">MP7-Servidor UF1 22/23</a> (Autor: QWERTY ZGZ)</li>
+                target="_blank" class="importante">MP7-Servidor UF1 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf2-daw-ilerna-22-23.html"
-                target="_blank" class="importante">MP7-Servidor UF2 22/23</a> (Autor: QWERTY ZGZ)</li>
+                target="_blank" class="importante">MP7-Servidor UF2 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf3-daw-ilerna-22-23.html"
-                target="_blank" class="importante">MP7-Servidor UF3 22/23</a> (Autor: QWERTY ZGZ)</li>
+                target="_blank" class="importante">MP7-Servidor UF3 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp7-desarrollo-web-entorno-servidor-uf4-daw-ilerna-22-23.html"
-                target="_blank" class="importante">MP7-Servidor UF4 22/23</a> (Autor: QWERTY ZGZ)</li>
+                target="_blank" class="importante">MP7-Servidor UF4 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/mp6-desarrollo-web-entorno-cliente-daw-ilerna-22-23.html"
-                target="_blank">Recopilatorio Pacs Semestre 22/23</a> (Autor: QWERTY ZGZ)</li>
+                target="_blank">Recopilatorio Pacs Semestre 22/23</a> (Autor: QWERTY)</li>
         <li><a href="https://www.daypo.com/dwes-ra1.html" target="_blank">RA1 25/26 (En construcción)</a> (Autor:
             JEDIEX)</li>
         <li><a href="https://www.daypo.com/dwes-ra2.html" target="_blank">RA2 25/26 (En construcción)</a> (Autor:
@@ -186,16 +214,20 @@
             JEDIEX)</li>
         <li><a href="https://www.daypo.com/dwes-ra9.html" target="_blank">RA9 25/26 (En construcción)</a> (Autor:
             JEDIEX)</li>
-        
+
         </br>
         <div class="contador" id="contador-despliegue"></div>
     </ul>
 
+    <p style="text-align: center;">
+        <a href="https://www.daypo.com" target="_blank">Enlace a la página de DAYPO</a>
+    </p>
 
     <!-- SCRIPT PARA CAMBIAR ENTRE LISTAS -->
     <script>
         const selector = document.getElementById("selector");
         const listas = document.querySelectorAll("ul");
+        const btnModoOscuro = document.getElementById("modo-oscuro-btn");
 
         selector.addEventListener("change", () => {
             const valor = selector.value;
@@ -215,6 +247,22 @@
                 contador.textContent = `Total tests: ${totalTests} · Destacados: ${importantes}`;
             }
         });
+
+        // Modo oscuro
+        const activarModoOscuro = () => {
+            document.body.classList.toggle("dark");
+            const estado = document.body.classList.contains("dark");
+            localStorage.setItem("modoOscuro", estado);
+            btnModoOscuro.textContent = estado ? "Desactivar modo oscuro" : "Activar modo oscuro";
+        };
+
+        btnModoOscuro.addEventListener("click", activarModoOscuro);
+
+        // Cargar preferencia guardada
+        if (localStorage.getItem("modoOscuro") === "true") {
+            document.body.classList.add("dark");
+            btnModoOscuro.textContent = "Desactivar modo oscuro";
+        }
     </script>
 </body>
 

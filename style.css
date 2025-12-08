@@ -69,6 +69,15 @@ body.dark #modo-oscuro-btn {
     border: 1px solid #555;
 }
 
+.modo-btn:hover {
+    transform: scale(1.12);
+}
+
+body.dark .modo-btn {
+    background: #444;
+    color: #fff;
+}
+
 /* ----------------- BOTÓN MODO OSCURO ------------------ */
 .modo-btn {
     position: fixed;

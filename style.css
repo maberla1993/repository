@@ -69,6 +69,22 @@ body.dark #modo-oscuro-btn {
     border: 1px solid #555;
 }
 
+/* ----------------- BOTÓN MODO OSCURO ------------------ */
+.modo-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    background: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 /* Botón volver arriba */
 #volver-arriba {
     position: fixed;

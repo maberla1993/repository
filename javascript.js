@@ -23,27 +23,24 @@ selector.addEventListener("change", () => {
     }
 });
 
-// Modo oscuro
-const activarModoOscuro = () => {
+/* ------ BOTÓN MODO OSCURO ------ */
+const btnDark = document.getElementById("toggle-dark-mode");
+
+btnDark.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-    const estado = document.body.classList.contains("dark");
-    localStorage.setItem("modoOscuro", estado);
-    btnModoOscuro.textContent = estado ? "Desactivar modo oscuro" : "Activar modo oscuro";
-};
 
-btnModoOscuro.addEventListener("click", activarModoOscuro);
-
-// Cargar preferencia guardada
-if (localStorage.getItem("modoOscuro") === "true") {
-    document.body.classList.add("dark");
-    btnModoOscuro.textContent = "Desactivar modo oscuro";
-}
+    if (document.body.classList.contains("dark")) {
+        btnDark.textContent = "☀️";
+    } else {
+        btnDark.textContent = "🌙";
+    }
+});
 
 const btnArriba = document.getElementById("volver-arriba");
 
 // Mostrar botón al hacer scroll
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
+    if (window.scrollY > 100) {
         btnArriba.style.opacity = "1";
         btnArriba.style.pointerEvents = "auto";
     } else {

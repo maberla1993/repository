@@ -30,6 +30,7 @@ ul {
 
 li {
     margin: 8px 0;
+    margin-bottom: 15px;
 }
 
 .importante {
@@ -62,8 +63,7 @@ body.dark .importante {
     color: #ff6666;
 }
 
-body.dark #selector,
-body.dark #modo-oscuro-btn {
+body.dark #selector {
     background: #333;
     color: #ddd;
     border: 1px solid #555;

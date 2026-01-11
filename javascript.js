@@ -1,5 +1,4 @@
 //SCRIPT PARA CAMBIAR ENTRE LISTAS
-
 const selector = document.getElementById("selector");
 const listas = document.querySelectorAll("ul");
 const btnModoOscuro = document.getElementById("modo-oscuro-btn");
